@@ -21,7 +21,7 @@ const gif = require("gif-search");
 const client = new Discord.Client({disableEveryone: true});
 
 var prefix = "$";
-var adminprefix = '$'
+var adminprefix = '$-'
 /////////////////////////
 ////////////////////////
 
