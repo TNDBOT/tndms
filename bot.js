@@ -20,8 +20,8 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-var prefix = "-";
-var adminprefix = 's-'
+var prefix = "$";
+var adminprefix = '$'
 /////////////////////////
 ////////////////////////
 
@@ -90,7 +90,7 @@ client.on('message', async msg =>{
 
 
 
-var prefix = "=";
+var prefix = "$";
 
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
@@ -172,7 +172,7 @@ client.on('message', async msg => {
                     }
                     
 					const videoIndex = parseInt(response.first().content);
-                    var video = await youtube.getVideoByID(videos[videoIndex - 1].id);
+                    var video = await youtube.getVideoByID(videos[videoIndex  1].id);
                     
 				} catch (err) {
 
